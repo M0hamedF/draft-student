@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bottom-text {
+    position: fixed;
+    /* sticks it relative to the viewport */
+    bottom: 0;
+    /* zero pixels from the bottom */
+    right: 0;
+    /* start from left */
+    width: 50%;
+    /* span full width */
+    text-align: center;
+    /* center the text */
+    background-color: rgba(0, 0, 0);
+    /* optional background */
+    color: white;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* LEFT IMAGE */
+.left {
+    flex: 1.5;
+    position: relative;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+        url("../assets/img/sign-bg.jpg") no-repeat center center;
+    background-size: cover;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.left-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 95%;
+    color: white;
+    display: grid;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+/* RIGHT FORM */
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: rgb(171, 175, 178);
+    padding: 20px;
+}

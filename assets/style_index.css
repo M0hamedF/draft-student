@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url("../assets/img/index-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.card {
+    color: rgb(113, 117, 119);
+    font-family: "Beaufort for LOL", sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+p {
+    margin: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+button {
+    background-color: rgb(6, 49, 49);
+    color: aliceblue;
+    width: 15rem;
+    height: 4rem;
+    border-radius: 7px;
+    border: none;
+    font-family: "Beaufort for LOL", sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(6, 49, 49, 0.6);
+    transform: scale(1.05);
+}
+
+.bottom-text {
+    position: fixed;
+    /* sticks it relative to the viewport */
+    bottom: 0;
+    /* zero pixels from the bottom */
+    left: 0;
+    /* start from left */
+    width: 100%;
+    /* span full width */
+    text-align: center;
+    /* center the text */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* optional background */
+    color: white;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+}
+.top-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: fixed;
+    /* sticks it relative to the viewport */
+    top: 0;
+    /* zero pixels from the bottom */
+    right: 0;
+    /* start from left */
+    width: 100%;
+    /* span full width */
+    text-align: center;
+    /* center the text */
+    background-color: rgba(0, 0, 0,0.3);
+    /* optional background */
+    color: rgb(178, 171, 171);
+    padding: 0.5rem 0;
+    font-size: 2rem;
+}
+img {
+    max-width: 50px;
+}
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
